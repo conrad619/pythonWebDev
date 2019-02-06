@@ -1,9 +1,9 @@
-import requests
-from flask import Flask, session, redirect, url_for, escape, request
+#import requests
+from flask import Flask, session, redirect, url_for, escape, request,render_template
 
-response = requests.get('https://httpbin.org/ip')
+#response = requests.get('https://httpbin.org/ip')
 
-print('Your IP is {0}'.format(response.json()['origin']))
+#print('Your IP is {0}'.format(response.json()['origin']))
 
 app = Flask(__name__)
 app.secret_key = b'\xe5\xbf\xfcP\xa6$nM~\xf3~\xd0\x18\xc6\x1e\x11'
